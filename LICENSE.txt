@@ -1,4 +1,4 @@
-Copyright (c) 2014 Fabiano Beselga
+Copyright (c) 2014 Fabiano B.
 
 MIT License
 
