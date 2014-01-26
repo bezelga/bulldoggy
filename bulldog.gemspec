@@ -6,10 +6,10 @@ require 'bulldog/version'
 Gem::Specification.new do |spec|
   spec.name          = "bulldog"
   spec.version       = Bulldog::VERSION
-  spec.authors       = ["Fabiano Beselga"]
-  spec.email         = ["fabianobeselga@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.authors       = ["Fabiano B."]
+  spec.email         = ["fabiano@fbzga.com"]
+  spec.summary       = %q{Todo list app inspired by Uncle Bob's Clean Architecture}
+  spec.description   = spec.summary
   spec.homepage      = ""
   spec.license       = "MIT"
 
