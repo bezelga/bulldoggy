@@ -1,13 +1,15 @@
-class Repository
-  def self.register(type, repo)
-    repositories[type] = repo
-  end
+module Bulldog
+  class Repository
+    def self.register(type, repo)
+      repositories[type] = repo
+    end
 
-  def self.for(type)
-    repositories[type]
-  end
+    def self.for(type)
+      repositories[type]
+    end
 
-  def self.repositories
-    @_repos ||= {}
+    def self.repositories
+      @_repos ||= {}
+    end
   end
 end

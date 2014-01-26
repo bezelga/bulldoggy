@@ -9,4 +9,4 @@ module Bulldog
   # Your code goes here...
 end
 
-Repository.register :list, Repositories::InMemory::Lists.new
+Bulldog::Repository.register :list, Bulldog::Repositories::InMemory::Lists.new

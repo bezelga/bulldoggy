@@ -1,8 +1,10 @@
-module Entities
-  class List
-    attr_accessor :name, :id
+module Bulldog
+  module Entities
+    class List
+      attr_accessor :name, :id
 
-    def initialize(name)
+      def initialize(name)
+      end
     end
   end
 end
