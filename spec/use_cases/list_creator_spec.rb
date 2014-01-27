@@ -1,13 +1,13 @@
 require 'spec_helper'
 
-describe Bulldog::UseCases::ListCreator do
+describe Bulldoggy::UseCases::ListCreator do
   subject(:creator) { described_class }
 
   describe '.create' do
     subject(:create) { creator.create(name) }
 
     let(:name) { 'Learning Clean Architecture' }
-    let(:list_repo) { Bulldog::Repository.for(:list) }
+    let(:list_repo) { Bulldoggy::Repository.for(:list) }
 
     it 'creates a list' do
       expect { create }.to change { list_repo.all.size }.by(1)

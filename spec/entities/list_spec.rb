@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Bulldog::Entities::List do
+describe Bulldoggy::Entities::List do
   subject(:list) { described_class }
 
   describe 'instantiating a new list' do

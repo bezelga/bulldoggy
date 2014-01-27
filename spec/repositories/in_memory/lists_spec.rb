@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe Bulldog::Repositories::InMemory::Lists do
+describe Bulldoggy::Repositories::InMemory::Lists do
   subject(:lists) { described_class.new }
 
   describe '#save' do
-    let(:list) { Bulldog::Entities::List.new('hello world list') }
+    let(:list) { Bulldoggy::Entities::List.new('hello world list') }
 
     it 'saves the list' do
       lists.save(list)

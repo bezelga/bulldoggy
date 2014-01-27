@@ -1,4 +1,4 @@
-module Bulldog
+module Bulldoggy
   class Repository
     def self.register(type, repo)
       repositories[type] = repo

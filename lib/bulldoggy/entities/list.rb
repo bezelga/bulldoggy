@@ -1,4 +1,4 @@
-module Bulldog
+module Bulldoggy
   module Entities
     class List
       attr_accessor :name, :id

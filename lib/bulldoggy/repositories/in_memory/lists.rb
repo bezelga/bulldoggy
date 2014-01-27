@@ -1,4 +1,4 @@
-module Bulldog
+module Bulldoggy
   module Repositories
     module InMemory
       class Lists

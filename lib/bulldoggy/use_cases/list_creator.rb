@@ -1,4 +1,4 @@
-module Bulldog
+module Bulldoggy
   module UseCases
     class ListCreator
       def self.create(name)
@@ -18,11 +18,11 @@ module Bulldog
       private
 
       def list
-        Bulldog::Entities::List.new(@params[:name])
+        Bulldoggy::Entities::List.new(@params[:name])
       end
 
       def list_repo
-        Bulldog::Repository.for(:list)
+        Bulldoggy::Repository.for(:list)
       end
     end
   end
