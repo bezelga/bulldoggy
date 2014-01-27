@@ -5,7 +5,7 @@ require 'bulldoggy/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "bulldoggy"
-  spec.version       = Bulldog::VERSION
+  spec.version       = Bulldoggy::VERSION
   spec.authors       = ["Fabiano B."]
   spec.email         = ["fabiano@fbzga.com"]
   spec.summary       = %q{Bulldoggy is a to-do list app inspired by Uncle Bob's Clean Architecture}
