@@ -4,11 +4,11 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'bulldog/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "bulldog"
+  spec.name          = "bulldoggy"
   spec.version       = Bulldog::VERSION
   spec.authors       = ["Fabiano B."]
   spec.email         = ["fabiano@fbzga.com"]
-  spec.summary       = %q{Todo list app inspired by Uncle Bob's Clean Architecture}
+  spec.summary       = %q{Bulldoggy is a to-do list app inspired by Uncle Bob's Clean Architecture}
   spec.description   = spec.summary
   spec.homepage      = ""
   spec.license       = "MIT"
