@@ -1,4 +1,3 @@
-require 'bulldoggy/repositories/in_memory/lists'
 require 'bulldoggy/repositories/in_memory/tasks'
 
 module Bulldoggy

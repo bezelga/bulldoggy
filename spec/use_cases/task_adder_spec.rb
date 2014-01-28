@@ -8,7 +8,6 @@ describe Bulldoggy::UseCases::TaskAdder do
 
     let(:task_repo) { Bulldoggy::Repository.for(:task) }
     let(:description) { 'Create an app with clean architecture' }
-    #let(:id) { 1 }
 
     it 'adds the task' do
       expect { add }.to change { task_repo.all.size }.by(1)
