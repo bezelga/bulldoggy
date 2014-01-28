@@ -18,11 +18,11 @@ module Bulldoggy
       private
 
       def list
-        Bulldoggy::Entities::List.new(@params[:name])
+        Entities::List.new(@params[:name])
       end
 
       def list_repo
-        Bulldoggy::Repository.for(:list)
+        Repository.for(:list)
       end
     end
   end

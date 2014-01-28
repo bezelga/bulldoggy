@@ -1,3 +1,6 @@
+require 'bulldoggy/repositories/in_memory/lists'
+require 'bulldoggy/repositories/in_memory/tasks'
+
 module Bulldoggy
   class Repository
     def self.register(type, repo)

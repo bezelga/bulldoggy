@@ -1,18 +1,17 @@
 require 'spec_helper'
 
-#describe TaskAdder do
-  #subject(:adder) { described_class }
+describe Bulldoggy::UseCases::TaskAdder do
+  subject(:adder) { described_class.new }
 
-  #describe '.add' do
-    #subject(:add) { adder.add(description, list_id) }
+  describe '.add' do
+    subject(:add) { adder.add(description) }
 
-    #let(:description) { 'Create an app with clean architecture' }
+    let(:task_repo) { Bulldoggy::Repository.for(:task) }
+    let(:description) { 'Create an app with clean architecture' }
     #let(:id) { 1 }
 
-    #context 'when the list exists' do
-      #xit 'adds a task to the list' do
-        #add.should be_true
-      #end
-    #end
-  #end
-#end
+    it 'adds the task' do
+      expect { add }.to change { task_repo.all.size }.by(1)
+    end
+  end
+end
