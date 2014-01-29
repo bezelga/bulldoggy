@@ -4,6 +4,7 @@ module Bulldoggy
       attr_accessor :id, :description
 
       def initialize(description)
+        @description = description
       end
     end
   end

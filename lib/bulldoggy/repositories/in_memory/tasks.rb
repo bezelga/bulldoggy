@@ -18,6 +18,11 @@ module Bulldoggy
           @tasks
         end
 
+        def delete_all
+          @tasks = {}
+          @next_id = 1
+        end
+
         def first
           first_key = @tasks.keys.sort.first
           @tasks[first_key]
