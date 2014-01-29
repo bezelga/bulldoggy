@@ -18,16 +18,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install bulldoggy
+    $ gem install bulldoggy --pre
 
 ## Usage
 
-TODO: Write usage instructions here
+### Adding tasks:
 
-## Contributing
+```Bulldoggy.add_task('go to the cinema')```
 
-1. Fork it ( http://github.com/<my-github-username>/bulldoggy/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+### Fetching tasks:
+
+```Bulldoggy.fetch```
