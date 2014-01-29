@@ -14,6 +14,10 @@ module Bulldoggy
     def add_task(description)
       UseCases::TaskAdder.new.add(description)
     end
+
+    def fetch
+      UseCases::TasksFetcher.new.fetch
+    end
   end
 end
 
