@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["fabiano@fbzga.com"]
   spec.summary       = %q{Bulldoggy is a to-do list app inspired by Uncle Bob's Clean Architecture}
   spec.description   = spec.summary
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/bezelga/bulldoggy"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
