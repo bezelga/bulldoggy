@@ -14,6 +14,10 @@ module Bulldoggy
           task
         end
 
+        def find(id)
+          @tasks[id]
+        end
+
         def all
           @tasks
         end
