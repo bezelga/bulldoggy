@@ -4,8 +4,8 @@ require 'bulldoggy/entities/task'
 require 'bulldoggy/repository'
 
 require 'bulldoggy/use_cases/task_adder'
-require 'bulldoggy/use_cases/tasks_fetcher'
 require 'bulldoggy/use_cases/task_checker'
+require 'bulldoggy/use_cases/tasks_fetcher'
 
 Bulldoggy::Repository.register :task, Bulldoggy::Repositories::InMemory::Tasks.new
 

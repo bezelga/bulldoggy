@@ -8,6 +8,7 @@ module Bulldoggy
       def check
         return :task_not_found unless task
         task.done = true
+        task
       end
 
       private
@@ -15,7 +16,6 @@ module Bulldoggy
       def task_repo
         Repository.for(:task)
       end
-
 
       def task
         @task ||= task_repo.find(@task_id)

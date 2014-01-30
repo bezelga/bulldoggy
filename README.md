@@ -27,7 +27,11 @@ Or install it yourself as:
 
 ### Adding tasks:
 
-    Bulldoggy.add_task('go to the cinema')
+    task = Bulldoggy.add_task('go to the cinema')
+
+### Checking tasks:
+
+    Bulldoggy.check_task(task.id)
 
 ### Fetching tasks:
 
