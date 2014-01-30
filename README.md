@@ -33,6 +33,10 @@ Or install it yourself as:
 
     Bulldoggy.check_task(task.id)
 
+### Unchecking tasks:
+
+    Bulldoggy.uncheck_task(task.id)
+
 ### Fetching tasks:
 
     Bulldoggy.fetch
