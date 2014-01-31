@@ -7,7 +7,15 @@ A **to-do list app** inspired by Uncle Bob's Clean Architecture.
 
 The idea of is to have a concrete implementation of the architecture and use various deliveries mechanisms and storages that will act as plugins to the core app.
 
-Implementations of the delivery mechanisms are welcome and will be listed here.
+Implementations of the delivery mechanisms are welcome and will be listed here:
+
+# Web as the delivery mechanism:
+
+* [bulldoggy-sinatra](https://github.com/bezelga/bulldoggy-sinatra)
+
+# CLI the delivery mechanism:
+
+* [bulldoggy-thor](https://github.com/philss/bulldoggy-thor)
 
 ## Installation
 
