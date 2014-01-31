@@ -3,11 +3,11 @@
 [![Build Status](https://travis-ci.org/bezelga/bulldoggy.png?branch=master)](https://travis-ci.org/bezelga/bulldoggy)
 [![Code Climate](https://codeclimate.com/repos/52e6f81869568017b5003aa8/badges/a99a662bbea4283cf60f/gpa.png)](https://codeclimate.com/repos/52e6f81869568017b5003aa8/feed)
 
-A proof of concept inspired on Uncle Bob's Clean Architecture examplified by a **to-do list app** named Bulldoggy.
+A **to-do list app** inspired by Uncle Bob's Clean Architecture.
 
-This gem is the core of the to-do list.
+The idea of is to have a concrete implementation of the architecture and use various deliveries mechanisms and storages that will act as plugins to the core app.
 
-The delivery mechanisms and the databases are deferred decisions, for now the focus on the app itself and not on these details, but the idea is that they act as plugins.
+Implementations of the delivery mechanisms are welcome and will be listed here.
 
 ## Installation
 
@@ -36,6 +36,10 @@ Or install it yourself as:
 ### Unchecking tasks:
 
     Bulldoggy.uncheck_task(task.id)
+
+### Removing tasks:
+
+    Bulldoggy.remove(task.id)
 
 ### Fetching tasks:
 
