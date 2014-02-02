@@ -9,11 +9,11 @@ The idea of is to have a concrete implementation of the architecture and use var
 
 Implementations of the delivery mechanisms are welcome and will be listed here:
 
-# Web as the delivery mechanism:
+## Web as the delivery mechanism:
 
 * [bulldoggy-sinatra](https://github.com/bezelga/bulldoggy-sinatra)
 
-# CLI the delivery mechanism:
+## CLI (command line interface) as the delivery mechanism:
 
 * [bulldoggy-thor](https://github.com/philss/bulldoggy-thor)
 
@@ -21,7 +21,7 @@ Implementations of the delivery mechanisms are welcome and will be listed here:
 
 Add this line to your application's Gemfile:
 
-    gem 'bulldoggy'
+    gem 'bulldoggy', '~> 0.0.1.alpha'
 
 And then execute:
 
