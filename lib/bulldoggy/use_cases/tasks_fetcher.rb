@@ -4,7 +4,7 @@ module Bulldoggy
       def fetch
         Bulldoggy::Repository.for(:task).all.map do |id, task|
           # IMPROVE: create a TaskSerializer to do this job
-          { id: id, description: task.description }
+          { id: id, description: task.description, :done => task.done }
         end
       end
     end

@@ -21,8 +21,8 @@ module Bulldoggy
             end
           end
 
-          let(:task1) { { id: 1, description: 'task#0' }  }
-          let(:task2) { { id: 2, description: 'task#1' } }
+          let(:task1) { { id: 1, description: 'task#0', :done => false }  }
+          let(:task2) { { id: 2, description: 'task#1', :done => false } }
 
           it { should == [task1, task2] }
         end
