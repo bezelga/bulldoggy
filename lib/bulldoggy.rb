@@ -1,8 +1,6 @@
 require "bulldoggy/version"
-
 require 'bulldoggy/entities/task'
 require 'bulldoggy/repository'
-
 Dir[File.dirname(__FILE__) + "/bulldoggy/use_cases/**/*.rb"].each { |file| require file }
 
 Bulldoggy::Repository.register :task, Bulldoggy::Repositories::InMemory::Tasks.new

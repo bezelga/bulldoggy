@@ -3,9 +3,9 @@ module Bulldoggy
     class Task
       attr_accessor :id, :description, :done
 
-      def initialize(description)
+      def initialize(description, done=false)
         @description = description
-        @done = false
+        @done = done
       end
     end
   end

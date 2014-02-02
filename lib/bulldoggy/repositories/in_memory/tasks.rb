@@ -8,11 +8,25 @@ module Bulldoggy
         end
 
         def all
-          @tasks
+          @tasks.values
         end
 
         def find(id)
           @tasks[id]
+        end
+
+        def check(id)
+          task = @tasks[id]
+          return :task_not_found unless task
+          task.done = true
+          task
+        end
+
+        def uncheck(id)
+          task = @tasks[id]
+          return :task_not_found unless task
+          task.done = false
+          task
         end
 
         def save(task)

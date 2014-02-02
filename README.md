@@ -12,6 +12,7 @@ Implementations of the delivery mechanisms are welcome and will be listed here:
 ## Web as the delivery mechanism:
 
 * [bulldoggy-sinatra](https://github.com/bezelga/bulldoggy-sinatra)
+* [bulldoggy-rails](https://github.com/bezelga/bulldoggy-rails)
 
 ## CLI (command line interface) as the delivery mechanism:
 
@@ -52,3 +53,15 @@ Or install it yourself as:
 ### Fetching tasks:
 
     Bulldoggy.fetch
+
+## Usage with Rails:
+
+### Connecting entities to ActiveRecord models
+
+Inside your Rails app, create an initializer and register your repository adapters to make it work with Rails AR models.
+
+config/initializers/bulldoggy.rb:
+
+	Bulldoggy::Repository.register :task, TasksRespositoryAdapter.new
+
+TODO: add repository adapter example

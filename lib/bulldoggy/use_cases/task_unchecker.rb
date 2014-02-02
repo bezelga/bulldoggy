@@ -6,19 +6,13 @@ module Bulldoggy
       end
 
       def uncheck
-        return :task_not_found unless task
-        task.done = false
-        task
+        task_repo.uncheck(@task_id)
       end
 
       private
 
       def task_repo
         Repository.for(:task)
-      end
-
-      def task
-        @task ||= task_repo.find(@task_id)
       end
     end
   end
